@@ -76,22 +76,23 @@
         <hr class="m-margin-top-small" style="width: 30%">
         <br>
         <div>
-            <p>“小二，上茶~”</p>
-            <p>“来~嘞~，客官您稍等”</p>
-            <p>“各位客官，我是ONESTAR，人称“一颗星”，此客栈掌柜的”</p>
+            <p>“00后”</p>
+            <p>“来自翡翠湖男子职业技术学院”</p>
+            <p>“是这间客栈掌柜的”</p>
             <br>
-            <p>95后</p>
-            <p>爱编程、爱运动、爱折腾</p>
-            <p>生命在于折腾</p>
-            <p>世界很大</p>
-            <p>有些鸟儿注定是不会被关在笼子里的</p>
-            <p>因为它们的每一片羽毛都闪耀着自由的光辉</p>
-            <p>既然来到了人间</p>
-            <p>便去经历，去拼搏，去感受，去爱</p>
-            <p>生命不息，折腾不止</p>
-            <p>总有些人，有些事，会让你感觉到生命的温暖和满足，让你感慨生命的“不虚此行”</p>
-            <p>届时，我会说</p>
-            <p>我来过，我不后悔！</p>
+            <p>爱写bug</p>
+            <p>爱折腾代码</p>
+            <p>客栈很小</p>
+            <p>用来记录自己学习的过程</p>
+            <p>偶尔写点吐槽</p>
+            <p>如果能对你有一毫的帮助</p>
+            <p>不胜荣幸</p>
+            <br>
+            <p>我即使是死了</p>
+            <p>钉在棺材里了</p>
+            <p>也要在墓里</p>
+            <p>用这腐朽的声带喊出</p>
+            <p>我与bug不共戴天！</p>
         </div>
     </div>
 </div>
@@ -136,47 +137,6 @@
     // 显示github
     $('.github').popup();
 
-
-
-
-    // 运行时间统计
-    function secondToDate(second) {
-        if (!second) {
-            return 0;
-        }
-        var time = new Array(0, 0, 0, 0, 0);
-        if (second >= 365 * 24 * 3600) {
-            time[0] = parseInt(second / (365 * 24 * 3600));
-            second %= 365 * 24 * 3600;
-        }
-        if (second >= 24 * 3600) {
-            time[1] = parseInt(second / (24 * 3600));
-            second %= 24 * 3600;
-        }
-        if (second >= 3600) {
-            time[2] = parseInt(second / 3600);
-            second %= 3600;
-        }
-        if (second >= 60) {
-            time[3] = parseInt(second / 60);
-            second %= 60;
-        }
-        if (second > 0) {
-            time[4] = second;
-        }
-        return time;
-    }
-    function setTime() {
-        /*此处为网站的创建时间*/
-        var create_time = Math.round(new Date(Date.UTC(2020, 01, 25, 15, 15, 15)).getTime() / 1000);
-        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
-        currentTime = secondToDate((timestamp - create_time));
-        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
-            + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
-            + '秒';
-        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
-    }
-    setInterval(setTime, 1000);
 
 
   </script>
