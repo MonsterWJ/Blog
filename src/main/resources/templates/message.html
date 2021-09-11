@@ -20,7 +20,6 @@
         <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide"><i class="clone outline icon"></i>分类</a>
         <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide"><i class="clock icon"></i>时间轴</a>
         <a href="#" th:href="@{/message}" class="active m-item item m-mobile-hide"><i class="book icon"></i>留言板</a>
-        <a href="#" th:href="@{/friends}" class="m-item item m-mobile-hide"><i class="pencil alternate icon"></i>友人帐</a>
         <a href="#" th:href="@{/picture}" class="m-item item m-mobile-hide"><i class="image icon"></i>照片墙</a>
         <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
       <!--</div>-->
@@ -40,31 +39,31 @@
 </nav>
 
 
-<!--顶部图片-->
-<div class="m-bg-type_outer" style="width: 100%;height: 40%">
-  <img src="../static/images/messagebg.jpg" th:src="@{/images/messagebg.jpg}" alt="" class="ui m-bg image" style="width: 100%;height: 100%">
-  <div class="m-bg-class_cover">
-    <div class="ui container" style="position: relative ;bottom: -540px;">
-      <div class="m-font-size-title m-right-bottom" align="center" style="font-family:'STXingkai'">留言板</div>
-      <div class="m-font-size-text-init-title m-margin-top" align="center">虽然只是短暂的擦身，相遇与分别，尽管如此，我却仍然想珍惜这所有的一切</div>
+<!--&lt;!&ndash;顶部图片&ndash;&gt;-->
+<!--<div class="m-bg-type_outer" style="width: 100%;height: 40%">-->
+<!--  <img src="../static/images/messagebg.jpg" th:src="@{/images/messagebg.jpg}" alt="" class="ui m-bg image" style="width: 100%;height: 100%">-->
+<!--  <div class="m-bg-class_cover">-->
+<!--    <div class="ui container" style="position: relative ;bottom: -540px;">-->
+<!--      <div class="m-font-size-title m-right-bottom" align="center" style="font-family:'STXingkai'">留言板</div>-->
+<!--      <div class="m-font-size-text-init-title m-margin-top" align="center">虽然只是短暂的擦身，相遇与分别，尽管如此，我却仍然想珍惜这所有的一切</div>-->
 
-    </div>
-  </div>
-</div>
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 
 
 <!--中间内容-->
 <div id="waypoint" class="m-margin- animated fadeIn">
   <div class="ui container m-opacity box-shadow-max">
-      <!--                新增留言-->
+      <!--新增留言-->
       <div id="message-form" class="ui form">
           <input type="hidden" name="parentMessage.id" value="-1">
-          <!--                    留言区-->
+          <!-- 留言区-->
           <div class="field">
               <textarea name="content" placeholder="请输入留言信息..."></textarea>
           </div>
           <div class="ui grid">
-              <!--                    输入姓名-->
+              <!--输入姓名-->
               <div class="five wide column">
               <div class="field m-mobile-wide m-margin-bottom-small">
                   <div class="ui left icon input">
@@ -74,7 +73,7 @@
               </div>
               </div>
 
-              <!--                        输入邮箱-->
+              <!--输入邮箱-->
               <div class="five wide column">
               <div class="field m-mobile-wide m-margin-bottom-small">
                   <div class="ui left icon input">
@@ -164,8 +163,6 @@
 <div id="toolbar" class="m-padded-tb-large m-fixed m-right-bottom">
     <a href="#" class="ui teal icon button"><i class="chevron up icon"></i> </a>
 </div>
-
-
 
 <!--底部栏-->
 <footer class="ui inverted vertical segment m-padded-tb-massive m-opacity">
