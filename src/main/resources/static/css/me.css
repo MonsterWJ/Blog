@@ -147,6 +147,9 @@ body{
 .m-margin-top-large {
     margin-top: 2em !important;
 }
+.m-margin-top-large-about {
+    margin-top: 5em !important;
+}
 .m-margin-top-max {
     margin-top: 35px !important;
 }
@@ -168,7 +171,7 @@ body{
 }
 
 .m-margin-{
-    margin-top:-4em !important;
+    margin-top:0em !important;
 }
 
 .m-margin--{
@@ -454,7 +457,8 @@ body{
 }
 
 .box-shadow-max{
-    margin-bottom: 15px;
+    height: 100%;
+    margin-bottom: 0px;
     border-radius: 2px;
     background-color: #fff;
     box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, .05);
